@@ -1,0 +1,22 @@
+{
+  "name": "pos-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyuefzhuol/POS-system.git"
+  },
+  "author": "eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyuefzhuol/POS-system/issues"
+  },
+  "homepage": "https://github.com/wyuefzhuol/POS-system#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
