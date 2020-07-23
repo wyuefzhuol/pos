@@ -1,4 +1,4 @@
-function printReceiptInfo(barcodes) {
+function printReceipt(barcodes) {
 
     var uniqueBarcodes = getUniqueBarcodes(barcodes);
 
@@ -10,7 +10,7 @@ function printReceiptInfo(barcodes) {
 
     var total = calculateTotal(itemSubtotal);
 
-    return formatReceipt(itemSubtotal, total);
+    console.log(formatReceipt(itemSubtotal, total));
 }
 
 var item = [
@@ -104,7 +104,7 @@ function calculateTotal(itemSubtotal) {
 }
 
 function formatReceipt(itemSubtotal, total) {
-    var head = "***<store earning no money>Receipt ***\n";
+    var head = "\n***<store earning no money>Receipt ***\n";
     var footer = "**********************";
     var itemTemplate = head;
     for (var i = 0; i < itemSubtotal.length; i++) {
@@ -117,4 +117,6 @@ function formatReceipt(itemSubtotal, total) {
     return itemTemplate;
 }
 
-module.exports = printReceiptInfo;
+module.exports = {
+    printReceipt
+};
